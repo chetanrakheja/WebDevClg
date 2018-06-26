@@ -1,0 +1,49 @@
+<html>
+
+<head>
+	<title>Temperature converter</title>
+	<script language="Javascript">
+		function convert() {
+			a = frm.cel.value;
+			b = frm.fer.value;
+			if (a.length == 0) {
+				c = (b - 32) * 5 / 9;
+				frm.cel.value = c;
+			}
+			if (b.length == 0) {
+				c = a * 9 / 5 + 32;
+				frm.fer.value = c;
+			}
+		}
+	</script>
+</head>
+
+<body bgcolor="AliceBlue">
+
+	<form name="frm" align="center">
+		<table cellpadding="10" bgcolor="#a3e4d7" align="left" cellspacing="2" >
+			<tr>
+				<th align="center" colspan=2>
+					<h1>Temperature Converter</h1>
+				</th>
+			</tr>
+			<tr>
+				<td>Celcius(<sup>o</sup>C):</td>
+				<td><input type="text" name="cel" id="cel" size="15"></td>
+			</tr>
+			<tr>
+				<td>Farenheit(<sup>o</sup>F):</td>
+				<td><input type="text" name="fer" id="fer" size="15"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td><input type="button" value="Convert" onclick="convert()"></td>
+			</tr>
+
+		</table>
+	</form>
+
+</body>
+
+</html>

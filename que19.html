@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Sum ,  Average , largest</title>
+		<script language="Javascript">
+		function check(){
+			var ob = new Array(2);
+			for(i=0;i<3;i++)
+			{
+			ob[i]=prompt("Enter Value " +(i+1));
+			ob[i]=parseInt(ob[i]);
+			}
+
+			var sum=0,max=0;
+			for(j=0;j<3;j++){
+				sum=sum+ob[j];
+				if(ob[j]>=max){
+						max= ob[j];
+					}
+			}
+			alert("Sum is "+ sum +" \nAverage is : "+ (sum/3) + " \nLargest is : " + max);	
+		}
+		</script>
+	</head>
+	<body>
+	<input type="Submit" value="Check" onclick="check()">		
+	</body>
+</html>

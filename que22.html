@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>palindrome</title>
+    <script language="javascript">
+        function check_p() {
+            var number, r, sum, temp;
+            number = palindrome.num.value;
+            sum = 0;
+            temp = number;
+            while (temp > 0) {
+                r = parseInt(temp % 10);
+                sum = (sum * 10) + r;
+                temp = parseInt(temp / 10);
+
+            }
+            if (number == sum)
+                palindrome.output.value = "PALINDROME";
+            else
+                palindrome.output.value = "NOT PALINDROME";
+        }
+
+    </script>
+</head>
+
+<body bgcolor="AliceBlue">
+    <form name="palindrome" align="center">
+       <table cellpadding="5" bgcolor= #DAF7A6 align=left cellspacing="1" >
+            <tr>
+                <th align="center" colspan=2>
+                    <h1>PALINDROME</h1>
+                </th>
+            </tr>
+            <tr>
+                <td>Enter the number:</td>
+                <td><input type="number" id="num"></td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td><input type="button" value="check" onClick="check_p()"></td>
+            </tr>
+            
+
+            <tr>
+                <td></td>
+                <td><output type="text" id="output"></td>
+            </tr>
+
+
+            
+        </table>
+    </form>
+</body>
+
+</html>

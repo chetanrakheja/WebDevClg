@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>print pattern 3</title>
+	<script type="text/javascript">
+		
+	function myFunction(){
+	var i,j,n=5;
+	var str ="";
+	var sp="<br />"	;
+		
+		for	(i=0;i<5;i++)
+			{
+				for(j=1;j<=n-i;j++)
+					{
+						str = str+j;
+					}
+				for(j=0;j<2*i-1;j++)
+					{
+						str = str+"&nbsp;&nbsp;";
+						
+					}
+				for(j=n-i;j>0;j--)
+					{	if (j==5){continue;}
+					 
+						str = str+j;
+					}
+				str=str+sp;
+				
+			}
+		
+		 document.getElementById("patern").innerHTML = str;
+	
+		}
+	</script>
+</head>
+<body>
+<button onclick="myFunction()">show pattern</button>
+	<p id="patern"></p>
+</body>
+</html>

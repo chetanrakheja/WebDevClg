@@ -1,0 +1,25 @@
+<html>
+<head>
+<script language="Javascript">
+	function show(){
+	a=document.frm.txt.value;
+	if(a=="")
+	{
+	alert("Text box is empty, enter Value");
+	}
+	else	
+	{
+	document.write("Entered Value is " + a);
+	}
+	}
+</script>
+</head>
+
+<body>
+<form name="frm">
+	<input type="text" name="txt">
+	<input type="button" value="Click me" onclick="show();">
+</form>
+</body>
+
+</html>

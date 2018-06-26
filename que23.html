@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>calculation of factorial</title>
+<script type="text/javascript">
+    function cfact()
+    {
+        var no = parseInt(prompt("enter number to calculate its factorial",""));
+        var c,fact=1,nxtl="<br />";
+        
+        fact=parseInt(fact);
+        no=parseInt(no);
+        
+        
+
+        if(no<=0)
+            document.getElementById('demo').innerHTML=("invalid number");
+        else
+            {
+               for (c=1;c<=no;c++)
+            fact=fact*c;
+
+        document.getElementById('demo').innerHTML=("factorial of " + no + " = "+ fact); 
+            }
+        
+       
+        
+        
+    }
+    
+    </script>
+</head>
+<body>
+    
+<button onclick="cfact()">calculate factorial</button>
+
+<p id="demo"></p>
+</body>
+</html>

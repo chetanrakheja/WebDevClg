@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>program to make calculator</title>
+
+   
+<script type="text/javascript">
+    function add(){
+        var x,y,z;
+        x= calc.value1.value;
+        y= calc.value2.value;
+        x=parseFloat(x);
+        y=parseFloat(y);
+        z=x+y;
+       calc.value3.value=z;
+      }
+    function sub(){
+        var x,y,z;
+        x= calc.value1.value;
+        y= calc.value2.value;
+        x=parseFloat(x);
+        y=parseFloat(y);
+        z=x-y;
+       calc.value3.value=z;
+      }
+    function mul(){
+        var x,y,z;
+        x= calc.value1.value;
+        y= calc.value2.value;
+        x=parseFloat(x);
+        y=parseFloat(y);
+        z=x*y;
+       calc.value3.value=z;
+      }
+    function div(){
+        var x,y,z;
+        x= calc.value1.value;
+        y= calc.value2.value;
+        x=parseFloat(x);
+        y=parseFloat(y);
+        z=x/y;
+       calc.value3.value=z;
+      }
+    function rem(){
+        var x,y,z;
+        x= calc.value1.value;
+        y= calc.value2.value;
+        z=x%y;
+       calc.value3.value=z;
+      }
+    
+    
+</script>
+
+
+
+</head>
+
+<body>
+<form id="calc">
+    <table>
+        <tr><th colspan="2">
+            <h1>Calculator</h1>
+        </th></tr>
+        
+        <tr><th>enter 1st value</th><td><input type="number" id="value1"></td>
+        </tr>
+        
+        
+        <tr><th>enter 2nd value</th><td><input type="number" id="value2"></td>
+        </tr>
+        
+       
+        
+        
+        <tr><th colspan="2">
+            <input type="button" value="add" onclick="add()">            
+            <input type="button" value="sub" onclick="sub()">
+            <input type="button" value="mul" onclick="mul()">
+            <input type="button" value="div" onclick="div()">
+            <input type="button" value="rem" onclick="rem()">
+            
+            
+        </th></tr>
+        
+         <tr><th>result</th>
+        <td><input type="number" id="value3"></td></tr>
+    </table>
+    
+</form>
+    
+        
+                
+</body>
+</html>

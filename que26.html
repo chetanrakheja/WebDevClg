@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>print pattern 2</title>
+	<script type="text/javascript">
+		
+	function myFunction(){
+	var i,j;
+	var str ="";
+	var sp="<br />"	;
+		for	(i=1;i<=5;i++)
+			{
+				for(j=5;j>=i;j--)
+					{
+						str = str+j;						
+					}
+				str=str+sp;
+				
+			}
+		
+		 document.getElementById("patern").innerHTML = str;
+	
+		}
+	
+	</script>
+</head>
+<body>
+<button onclick="myFunction()">show pattern</button>
+	<p id="patern"></p>
+</body>
+</html>

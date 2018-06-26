@@ -1,0 +1,29 @@
+<html>
+
+<head>
+
+<script type="text/javascript">
+    function show() {
+	var a=new Date();
+	var b=a.getHours();
+	if(b<12){
+	document.write("Good Morning");
+	}
+	else if(b>=12 && b<=17){
+	document.write("Good Afternoon");
+	}
+	else{
+	document.write("Good Evening");
+	}
+    }
+</script>
+</head>
+
+<body>
+    <form name="frm">
+        <input type="button" value="Click Here" onClick="show()">
+    </form>
+
+</body>
+
+</html>
